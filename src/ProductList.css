@@ -40,7 +40,6 @@ body {
 }
 
 /* Product Grid */
-/*
 .product-grid {
     display:flex;
     flex-direction: column;
@@ -48,26 +47,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-*/
-.product_grid {
-  display: flex;
-  flex-wrap: wrap;  /* allow multiple rows */
-  gap: 20px;        /* space between cards */
-  justify-content: center; /* optional: center the cards */
-}
-
-.plant_card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    color: #333;
-    width: 300px;
-  }
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -271,3 +250,20 @@ body {
         text-align: center; /* Align text to the center */
       }
   }
+
+
+
+.product-button {
+  /* your existing button styles */
+  background-color: #4CAF50;
+  color: white;
+}
+
+.disabled-button {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.product-button:disabled {
+  opacity: 1; /* Ensure it doesn't get the browser's default disabled styling */
+}
